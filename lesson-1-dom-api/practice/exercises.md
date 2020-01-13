@@ -3,6 +3,7 @@
 
 1. What is one difference between a NodeList and an HTMLCollection?
 
+- A NodeList can contain any type of node, and you can use array methods on them, while with HTMLCollections, only elements can go in them, and they are array-like.
 
 2. What does the following program log? Why?
 
@@ -34,7 +35,7 @@
   <html>
       <body>
           <h2 class="example">A heading with class="example" </h2>
-          <p class="example">A paragraph with class="example".</p> 
+          <p class="example">A paragraph with class="example".</p>
           <p>Click the button to add a background color to the first element in the document with class="example".</p>
           <button onclick="changeColor()">Try it</button>
           <script>
@@ -82,7 +83,7 @@
   - IHop
   - Drive Change
   - Bagged Lunch
-      
+
   ```html
   <!DOCTYPE html>
   <html>
@@ -123,10 +124,12 @@
           </tr>
         </table>
         <br>
-        <input type="button" onclick="insert_Row()" value="Insert row"> 
+        <input type="button" onclick="insert_Row()" value="Insert row">
       </body>
     </html>
     ```
+
+
 
 7. Write a JavaScript program to remove items from a dropdown list.
   ```html
